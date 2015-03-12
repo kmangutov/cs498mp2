@@ -1,7 +1,22 @@
 $orange         : #BD3613;
 $blue           : #2176C7;
 
-$font-primary: Merriweather, serif;
-$font-secondary: Bree Serif, serif;
+//$font-primary: Merriweather, serif;
+//$font-secondary: Bree Serif, serif;
+
+$font-primary: Lato, sans-serif;
+$font-secondary: Oswald, serif;
 
 $default-border-radius : 10px;
+
+$color-primary: #BF8261;
+$color-secondary: #71A654;
+$color-tertiary: #445F7C;
+
+$color-action: darken(#f00, 17.5);
+
+$color-black: #000;
+$color-white: #fff;
+
+$topbar-link-bg-active: $color-action;
+$topbar-link-bg-active-hover: scale-color($color-action, $lightness: -14%);

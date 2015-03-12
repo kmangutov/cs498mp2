@@ -39,6 +39,12 @@
   @import "foundation/components/tabs";
   @import "foundation/components/thumbs";
   @import "foundation/components/tooltips";
+
+  
+$color-action: darken(#f00, 17.5);
+$topbar-link-bg-active: $color-action;
+$topbar-link-bg-active-hover: scale-color($color-action, $lightness: -14%);
+
   @import "foundation/components/top-bar";
   @import "foundation/components/type";
   @import "foundation/components/offcanvas";

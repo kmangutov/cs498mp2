@@ -1,6 +1,78 @@
 @import "compass";
 @import "compass/reset";
 
+@import "base";
 @import "variables";
 @import "mixins";
-@import "base";
+@import "typography";
+@import "products";
+
+
+#home {
+
+  background: url('../images/forest_bw.jpg') no-repeat center center fixed;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  min-height: 100vh;
+}
+
+#call-to-action {
+
+  background-color: $color-action;
+
+  width: auto;
+  height: auto;
+
+  display: inline-block;
+  padding: 10px 10px;
+  margin: 10px 10px;
+
+  border-style: solid;
+  border-width: 1px;
+}
+
+#about-us {
+
+  background-color: rgba(0.99, 0.99, 0.99, 0.05);
+  margin: 100px 0px;
+  padding-bottom: 25px;
+}
+
+#call-to-action h2 {
+
+  color: #FFF;
+}
+
+.side-margins {
+
+  margin: 50px 15px;
+}
+
+.lolcenter {
+
+  margin: 200px 0px;
+}
+
+.main-carousel {
+  width: 200px;
+}
+
+@mixin img-circular($radius) {
+  width: $radius * 2;
+  height: $radius * 2;
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.circular {
+
+  @include img-circular(200px);
+}
+
+.circular-half {
+  @include img-circular(125px);
+}

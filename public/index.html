@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>MP2 Starter</title>
-  <script src="./lib/angular/angular.min.js"></script>
-  <script src="./js/controllers.js"></script>
-  <link rel="stylesheet" href="./css/styles.css">
+
   <link rel="stylesheet" href="./foundation/css/foundation.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="stylesheet" type="text/css" href="lib/slick.js/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="lib/slick.js/slick/slick-theme.css"/>
   
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
@@ -14,47 +16,132 @@
 
 <body>
 
-	<nav class="top-bar" data-topbar role="navigation">
-	  <ul class="title-area">
-	    <li class="name">
-	      <h1><a href="#">MP2</a></h1>
-	    </li>
-	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-	  </ul>
+  <div class="fixed sticky"> 
+    <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
 
-	  <section class="top-bar-section">
-	    <!-- Left Nav Section -->
-	    <ul class="left">
-	      <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html">CS498RK</a></li>
-	    </ul>
-	  </section>
-	</nav>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Bearded Pleasures</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
 
-	<div class="row" ng-app = "demoApp">
-		<div class="panel small-centered columns small-12 medium-4">
-    	<input id="nameInput" ng-model="name" placeholder="Your Name" autofocus>
-	
-		<h3>Hello, {{name}}</h3>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class="active"><a href="#" id="link-home">Home</a></li>
+          <li><a href="#" id="link-products">Products</a></li>
+          <li><a href="#" id="link-about-us">About Us</a></li>
+        </ul>
 
-		</div>
-	</div>
-	<div class="row">
-		<div class="alert columns small-12 large-6">
-			<div><img src="http://lorempixel.com/400/200/cats" /></div>
+        <ul class="left">
+        </ul>
+      </section>  
 
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-		</div>
-		<div class="columns small-12 large-6">
-	  	<div><img src="http://lorempixel.com/400/200/nature" />	</div>
-	  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!</div>
-	</div>
- 
+    </nav> 
+  </div>
+
+  <div id="home">
+    <section id="home" class="row">
+      <div class="small-12 medium-6 columns">
+        <div class="lolcenter">
+          <h1 class="font-secondary">Enhance the health of your beard with an enticing natural scent</h1>
+          <div class="text-center"><div id="call-to-action"><a href="#"><h2>Subscribe</h2></a></div></div>
+        </div>
+      </div>
+      <div class="small-12 medium-6 columns">
+        <div class="lolcenter"><center>
+          <div class="main-carousel">
+            <div><img width="200" height="200" src="images/products/forest_haven.JPG"></div>
+            <div><img width="200" height="200" src="images/products/onyx.jpg"></div>
+            <div><img width="200" height="200" src="images/products/whisperer.png"></div>
+          </div>
+        </center></div>
+      </div>
+    </section>
+  </div>
+
+  <section id="products" class="row text-center">
+
+    <h1 class ="title">Products</h2>
+
+    <div class="product-window">
+      <article class="row">
+        <div class="small-12 medium-3 columns">
+          <img src="images/products/onyx.jpg" class="circular-half">
+        </div>
+        <div class="small-12 medium-9 columns">
+          <p class="product-title">Onyx</p>
+          <p class="product-description">ONYX is the first ever beard oil to cater to the specific needs of African American's and their beards. We have heard your cry for a product that can stand up to the demand that your facial hair requires. ONYX will provide moisture to your skin and beard and has been formulated to smooth unruly texture. Smells great, and more importantly it's what you have been waiting for.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="product-window">
+      <article class="row product-window">
+        <div class="small-12 medium-9 columns">
+          <p class="product-title text-right">Forest Haven</p>
+          <p class="product-description text-right">Forest Haven is our best selling beard oil.  Our secret recipe will have your beard looking manly smelling manly and feeling soft as a bearded babies bum. Forest Haven has an essential blend of grape seed oil and sweet almond oil.</p>
+        </div>
+        <div class="small-12 medium-3 columns">
+          <img src="images/products/forest_haven.JPG" class="circular-half">
+        </div>
+      </article>
+    </div>
+
+    <div class="product-window">
+      <article class="row">
+        <div class="small-12 medium-3 columns">
+          <img src="images/products/whisperer.png" class="circular-half">
+        </div>
+        <div class="small-12 medium-9 columns">
+          <p class="product-title">The Beard Whisperer</p>
+          <p class="product-description">The Beard Whisperer 1 OZ Beard Balm is the 100% natural balm you need to keep stubborn hair down and to make your beard really shine.</p>
+        </div>
+      </article>
+    </div>
+
+  </section>
+
+  <div id="about-us">
+    <section class="row">
+      <h1 class="title">About Us</h1>
+      <article class="small-12 columns">
+        <p class="product-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+
+        <p class="product-description">
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+
+        <h3 class="subtitle">Where does it come from?</h3>
+
+        <p class="product-description">
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+        </p>
+
+      </article>
+    </section>
+  </div>
+
+  <section>
+    <div class="row">
+      <div class="small-12 text-center columns">
+        
+          <i class="icon-twitter icon-4x side-margins"></i>
+          <i class="icon-facebook icon-4x side-margins"></i>
+          <i class="icon-instagram icon-4x side-margins"></i>
+          <i class="icon-google-plus icon-4x side-margins"></i>
+        
+      </div>
+    </div>
+  </section>
 
 
   <script src="./js/script.js"></script>
   <script src="./lib/jquery-2.1.3.min/index.js"></script>
+  <script type="text/javascript" src="lib/slick.js/slick/slick.min.js"></script>
   <script src="./foundation/js/foundation.min.js"></script>
+  <script src="./foundation/js/foundation.magellan.js"></script>
+  <script src="./js/index.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

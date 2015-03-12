@@ -1,0 +1,41 @@
+
+h1, h2, h3 {
+  font-family: $font-primary;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+  //font-family: $font-secondary;
+}
+
+h3 {
+  font-size: 2em;
+  font-family: $font-secondary;
+}
+
+.font-secondary {
+
+  font-family: $font-secondary;
+}
+
+a {
+
+  color: $color-black;
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+  padding: 25px 0px;
+}
+
+h3.subtitle {
+
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
