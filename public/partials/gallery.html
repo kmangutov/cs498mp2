@@ -1,0 +1,12 @@
+
+
+<select multiple ng-model="filters">
+  <option ng-repeat="genre in genres">{{ genre }}</option>
+</select>
+
+
+<ul class="small-block-grid-2 medium-block-grid-3">
+  <li ng-repeat="movie in movies | selectedGenres:filters" ng-click="go(movie.id)">
+    <img src="./data/images/{{ movie.imdbID }}.jpg"></li>
+  </li>
+</ul>
