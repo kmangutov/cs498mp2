@@ -1,0 +1,42 @@
+
+
+<!--//rank, title, rated, released, runtime, genre, director, actors, plot, language, country, awards, metascore, imdbRating, imdbVotes, imdbID
+-->
+
+<br><br>
+
+<div class="row collapse postfix=radius">
+  <div class="small-9 columns">
+    <input type="text" placeholder="Fight Club" ng-model='search'>
+  </div>
+  <div class="small-3 columns">
+    <span class="postfix">Search</span>
+  </div>
+</div>
+
+<table>
+  <thead>
+    <tr>
+
+      <th ng-click="changeSorting('rank')">Rank</th>
+      <th ng-click="changeSorting('imdbRating')">IMDB Rating</th>
+      <th ng-click="changeSorting('title')">Title</th>
+      <th ng-click="changeSorting('rated')">Rated</th>
+      <th ng-click="changeSorting('director')">Director</th>
+      <th ng-click="changeSorting('released')">Released</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="movie in movies | orderBy:sort.column:sort.descending | filter:search" ng-click="go(movie.rank)">
+      
+      <td ng-bind="movie.rank"></td>
+      <td ng-bind="movie.imdbRating"></td>
+      <td ng-bind="movie.title"></td>
+      <td ng-bind="movie.rated"></td>
+      <td ng-bind="movie.director"></td>
+      <td ng-bind="movie.released"></td>
+
+    </tr>
+  </tbody>
+</table>
