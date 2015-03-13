@@ -13,22 +13,25 @@
 
 <body>
 
+<div class="contain-to-grid">
   <nav class="top-bar" data-topbar role="navigation">
     <ul class="title-area">
       <li class="name">
-        <h1><a href="#">MP2</a></h1>
+        <h1><a href="#/list">MP2</a></h1>
       </li>
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      <li class="toggle-topbar menu-icon"><a href="#/list"><span>Menu</span></a></li>
     </ul>
 
     <section class="top-bar-section">
       <!-- Left Nav Section -->
-      <ul class="left">
-        <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html">CS498RK</a></li>
+      <ul class="right">
+        <li><a href="#/list">List</a></li>
+        <li><a href="#/gallery">Gallery</a></li>
       </ul>
     </section>
   </nav>
+</div><br>
 
   <div class="row" ng-app="movieApp" ng-view>
 

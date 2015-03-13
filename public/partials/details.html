@@ -1,0 +1,28 @@
+
+<!--//rank, title, rated, released, runtime, genre, director, actors, plot, language, country, awards, metascore, imdbRating, imdbVotes, imdbID
+-->
+
+<img src="./data/images/{{ movie.imdbID }}.jpg" class="right">
+
+<a href="#/details/{{ id*1 - 1 }}" class="button" ng-show="id > 0">Previous</a>
+<a href="#/details/{{ id*1 + 1 }}" class="button" ng-show="id*1 + 1 < movies_length">Next</a>
+
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="(key, value) in movie">
+      <td>
+        {{key}}
+      </td>
+      <td>
+        {{value}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+    
