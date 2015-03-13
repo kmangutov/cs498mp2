@@ -28,7 +28,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr ng-repeat="movie in movies | orderBy:sort.column:sort.descending | filter:search" ng-click="go(movie.id)">
+    <tr ng-animate="'animate'" ng-repeat="movie in movies | orderBy:sort.column:sort.descending | filter:search" ng-click="go(movie.id)">
       
       <td ng-bind="movie.rank"></td>
       <td ng-bind="movie.imdbRating"></td>

@@ -8,6 +8,20 @@
 @import "products";
 
 
+.animate-enter, .animate-leave {
+transition: 500ms ease-in all;
+position: relative;
+display: block;
+} 
+.animate-enter.animate-enter-active, .animate-leave {
+opacity: 1;;
+}
+.animate-leave.animate-leave-active, .animate-enter {
+opacity: 0;}
+
+
+
+
 #home {
 
   background: url('../images/forest_bw.jpg') no-repeat center center fixed;
