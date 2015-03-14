@@ -7,6 +7,8 @@
 
 <ul class="small-block-grid-2 medium-block-grid-3">
   <li ng-animate="'animate'" ng-repeat="movie in movies | selectedGenres:filters" ng-click="go(movie.id)">
-    <img src="./data/images/{{ movie.imdbID }}.jpg"></li>
+
+        <img src="./data/images/{{ movie.imdbID }}.jpg">
+
   </li>
 </ul>

@@ -16,6 +16,10 @@ movieApp.config(['$routeProvider', function($routeProvider) {
       templateUrl: './partials/gallery.html',
       controller: 'GalleryController'
     })
+    .when('/cards', {
+      templateUrl: './partials/cards.html',
+      controller: 'GalleryController'
+    })
     .otherwise({
       redirectTo: '/list'
     });
