@@ -27,6 +27,11 @@ opacity: 0;}
   //border-color: #000;
 }
 
+.gallery-item:hover {
+
+  background-color: rgba(0.99, 0.99, 0.99, 0.05);
+}
+
 #home {
 
   background: url('../images/forest_bw.jpg') no-repeat center center fixed;

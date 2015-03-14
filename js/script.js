@@ -41,8 +41,6 @@ $(document).ready(function(){
       link_about_us.parent().removeClass("active");
   });
 
-
-
   $('#link-home').on('click', function(event) {
 
     event.preventDefault();
