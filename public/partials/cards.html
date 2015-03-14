@@ -1,0 +1,17 @@
+
+
+
+<ul class="small-block-grid-2 medium-block-grid-3">
+  <li ng-animate="'animate'" ng-repeat="movie in movies | selectedGenres:filters" ng-click="go(movie.id)">
+    <div class="card-box">
+      <div class="row">
+        <div class="small-3 columns">
+          <img src="./data/images/{{ movie.imdbID }}.jpg">
+        </div>
+        <div class="small-9 columns">
+          <span><h3 class="subheader">{{movie.title}}</h3></span>
+          <p class="subheader">{{movie.plot}}</p>
+        </div>
+    </div>
+  </li>
+</ul>
